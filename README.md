@@ -1,4 +1,4 @@
-# SoccerUnionApi
+<img width="829" alt="image" src="https://github.com/user-attachments/assets/d4da0839-8383-47eb-b24c-b181f1d927d4"># SoccerUnionApi
 
 ## 反波系统API联合登陆接口文档 
 
@@ -160,11 +160,11 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 
 成功获得返回的token之后，请将此token作为参数加在“专属反波系统跳转地址”之后传过来即可，我们可通过此token识别该用户。
 
-例如专属反波系统跳转地址为：https://hcwin68.com
+例如专属反波系统跳转地址为：https://test381.com
 
 返回的token为：d61054d8b02bf09048850a1c4ddab37a90fed3b0
 
-则将用户跳转至：https://hcwin68.com/auth?token=d61054d8b02bf09048850a1c4ddab37a90fed3b0
+则将用户跳转至：https://test381.com/auth?token=d61054d8b02bf09048850a1c4ddab37a90fed3b0
 
 完毕
 
