@@ -1,5 +1,3 @@
-<img width="829" alt="image" src="https://github.com/user-attachments/assets/d4da0839-8383-47eb-b24c-b181f1d927d4"># SoccerUnionApi
-
 ## 反波系统API联合登陆接口文档 
 
 - 目录
