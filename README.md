@@ -632,6 +632,8 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 | ---------  | ------ | --------------- | -------- |
 | orderId      | decimal | 7 <= length <= 18 | 订单号 |
 | memberId      | int | 0 < length < 11 | 用户ID |
+| matchId     | string | 7 <= length <= 20 | 赛事ID  |
+| kickoffTime     | datetime | - | 开赛时间  |
 | userName      | string | 1 < length < 50 | 用户名 |
 | leagueNameCn     | string | 5 <= length <= 50 | 联赛名(中文)  |
 | leagueNameEn     | string | 5 <= length <= 100 | 联赛名(英文)  |
@@ -652,6 +654,7 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 | status     | int | 1 | 0=未返利 1=赢 2=输 3=订单取消  |
 | createTime     | datetime | - | 订单生成时间  |
 | payTime     | datetime | - | 派彩时间  |
+| updatedTime     | datetime | - | 最后更新时间  |
 
 ##### <span id="333-----">3.3.3 调用示例</span>
 
@@ -676,6 +679,8 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 	"data": [{
 		"orderId": 23878254,
 		"memberId": 1001,
+		"matchId": "LK389283627",
+		"kickoffTime": "2024-10-01 12:30:35",
 		"userName": "abc123",
 		"leagueNameCn": "美女超",
 		"leagueNameEn": "USA WPSL Women",
@@ -694,11 +699,14 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 		"bonusRate": 12.5100,
 		"bonus": 1188.45,
 		"status": 1, //赢
-		"createTime": "2021-10-01 12:30:35",
-		"payTime": "2021-10-01 12:35:01"
+		"createTime": "2024-10-01 12:30:35",
+		"payTime": "2024-10-01 12:35:01",
+		"updatedTime": "2024-10-01 12:35:01"
 	}, {
 		"orderId": 23878611,
 		"memberId": 1001,
+		"matchId": "34556789",
+		"kickoffTime": "2024-10-01 12:30:35",
 		"userName": "abc123",
 		"leagueNameCn": "孟冠联",
 		"leagueNameEn": "Bangladesh Championship League",
@@ -718,7 +726,8 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 		"bonus": -2000.00,
 		"status": 2, //输
 		"createTime": "2021-10-01 12:30:35",
-		"payTime": null
+		"payTime": null,
+		"updatedTime": "2024-10-01 12:35:01"
 	}],
 	"totalPages": 2, //还有第2页，传入参数里pageId改为2，可获取第2页内容
 	"msg": "success"
