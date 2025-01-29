@@ -121,7 +121,7 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 | 参数名    | 必选 | 类型   | 字段长度        | 说明     |
 | --------- | ---- | ------ | --------------- | -------- |
 | memberId   | 是   | int | 0 < length < 11 | 用户ID |
-| userName  | 是   | string | 1 < length < 200 | 用户名     |
+| userName  | 是   | string | 1 < length < 50 | 用户名     |
 | sign  | 是   | string | 32 | 签名     |
 
 ##### <span id="212-----">2.1.2 返回参数</span>
@@ -427,7 +427,7 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 | 参数名    | 必选 | 类型   | 字段长度        | 说明     |
 | --------- | ---- | ------ | --------------- | -------- |
 | memberId   | 是   | int | 0 < length < 11 | 用户ID |
-| userName  | 是   | string | 1 < length < 200 | 用户名     |
+| userName  | 是   | string | 1 < length < 50 | 用户名     |
 | agentToken  | 是   | string | 1 < length < 50 | 代理识别码     |
 | sign  | 是   | string | 32 | 签名     |
 
