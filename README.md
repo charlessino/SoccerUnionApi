@@ -635,6 +635,7 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 | matchId     | string | 7 <= length <= 20 | 赛事ID  |
 | kickoffTime     | datetime | - | 开赛时间  |
 | userName      | string | 1 < length < 50 | 用户名 |
+| sysUserName      | string | 1 < length < 50 | 系统账号 |
 | leagueNameCn     | string | 5 <= length <= 50 | 联赛名(中文)  |
 | leagueNameEn     | string | 5 <= length <= 100 | 联赛名(英文)  |
 | homeTeamNameCn     | string | 5 <= length <= 50 | 主队名(中文)  |
