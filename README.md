@@ -683,6 +683,7 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 		"matchId": "LK389283627",
 		"kickoffTime": "2024-10-01 12:30:35",
 		"userName": "abc123",
+		"sysUserName": "123456abc123",
 		"leagueNameCn": "美女超",
 		"leagueNameEn": "USA WPSL Women",
 		"homeTeamNameCn": "芝加哥城SC女足",
