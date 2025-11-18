@@ -822,6 +822,11 @@ cbc0b11733b785b0317f1cc7d6f20fd8
 
 ### <span id="4-----">4 余额主动更新相关功能</span>
 <br>
+
+> [!WARNING]
+> 这是一个重要警告，请小心操作！
+
+<br>
 <span id="41-----">4.1 余额相关接口</span>
 
 Header：`Content-Type: application/json;charset=utf-8`
