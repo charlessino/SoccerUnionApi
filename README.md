@@ -849,7 +849,7 @@ Endpoint: `/api-v1/balance-check`
 | ------ | ------ | -------- | ------- | -------------------------------------------- |
 | status    | int | 1  |    1     | 查询结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 会员余额   |
-| error_code    | string | 32      |  TIME_OUT  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
+| error_code    | string | 32      |  TIME_OUT  | 错误代码，详见[附件4.4.2错误代码](#442-----)描述  |
 
 #### <span id="42-----">4.2 请求余额更新</span>
 
@@ -864,7 +864,7 @@ Endpoint: `/api-v1/balance-update`
 | transaction_id       | 是   | string  | 32       |     23985235     | 交易流水号       |
 | member_id   | 是   | string     | 50        | YK398362287        | 渠道会员ID |
 | action_value     | 是   | decimal | 18,2    | 820.00  | 资金变动的金额，正数代表增加，负数代表扣减，例如100代表余额增加100，-200代表余额扣减200  |
-| action_type | 是   | int | 2    | 1  | 资金变动类型，详见[附件2.1资金变动类型](#21-----)描述      |
+| action_type | 是   | int | 2    | 1  | 资金变动类型，详见[附件4.4.1资金变动类型](#441-----)描述      |
 | order_id |    | string | 50    | S03827836  | 订单号，如涉及投注订单则传入订单号；如果不涉及订单，可能为空    |
 | remarks |    | string | 100    | 01034388769  | 备注，如资金变动类型为余额调整则为空   |
 | timestamp  |   是   | string  | 10      |  1730456083   | 时间戳  |
@@ -877,7 +877,7 @@ Endpoint: `/api-v1/balance-update`
 | transaction_id         | string  | 32      |  23985235     | 交易流水号       |
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
 | balance    | decimal | 18,2   | 8002.00 | 会员余额，如果成功返回最新余额，如果失败返回当前余额   |
-| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
+| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件4.4.2错误代码](#442-----)描述  |
 
 
 #### <span id="43-----">4.3 订单状态查询</span>
@@ -900,7 +900,7 @@ Endpoint: `/api-v1/transaction-check`
 | ------ | ------ | -------- | ------- | -------------------------------------------- |
 | transaction_id         | string  | 32      |  23985235     | 交易流水号       |
 | status    | int | 1  |    1     | 更新结果，1=成功，2=失败 |
-| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件2.2错误代码](#22-----)描述  |
+| error_code    | string | 32      |  OUT_OF_BALANCE  | 错误代码，详见[附件4.4.2错误代码](#442-----)描述  |
 
 ### <span id="44-----">4.4 附件</span>
 
